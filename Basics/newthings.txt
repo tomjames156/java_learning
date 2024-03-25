@@ -1,0 +1,6 @@
+Arrays are declared
+
+type[] name = { value, value};
+length of an array is a property
+e.g. String[] people = {"Tim", "Tom", "Tam"}
+people.length
