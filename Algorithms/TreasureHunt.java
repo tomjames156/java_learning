@@ -107,16 +107,17 @@ public class TreasureHunt{
             }else if(move.equals("Q")){
                 break;
             }else{
-                System.out.println("Invalid Move");
+                System.out.println("\nInvalid Move\n");
             }
 
             try{
-                map[newRow][newCol] = 'P';
                 map[row][col] = 0;
+                map[newRow][newCol] = 'P';
                 row = newRow;
                 col = newCol;
             }catch(ArrayIndexOutOfBoundsException e){
-                System.out.println("You're at an edge");
+                System.out.println("\nYou're at an edge\n");
+                map[row][col] = 'P';
             }
             
             showMap(map);
