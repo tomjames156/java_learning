@@ -189,7 +189,7 @@ public class TreasureHunt{
                 }
             }else if(replacedItem == 'T'){
                 System.out.println("Congratulations you found the treasure");
-                break;
+                quitGame = true;
             }else if(replacedItem == 'E'){
                 System.out.println("\nDANGER: Enemy encountered\n");
                 // randomly decide who won the fight
@@ -202,7 +202,7 @@ public class TreasureHunt{
 
                     if(lives <= 0){
                         System.out.println("\nGAME OVER\n");
-                        break;
+                        quitGame = true;
                     }
                 }else{
                     System.out.println("You won the fight");
@@ -215,6 +215,10 @@ public class TreasureHunt{
             row = newRow;
             col = newCol;
             showMap(map);
+            
+            if(quitGame){
+                break;
+            }
         }
     }
 }
