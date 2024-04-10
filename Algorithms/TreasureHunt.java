@@ -55,57 +55,29 @@ public class TreasureHunt{
         return move;
     }
 
-    static char[] getElementsAround(char[][] arr, int row, int col){
-        // Gets all the elements around the element and returns an array of the RIGHT, LEFT, TOP and BOTTOM elements
+    static void findEnemies(char map[][], int userRow, int userCol){
+        // gives the player hints on the location of enemies
 
-        char[] surrounding = new char[4];
+        for(int row = 0; row < map.length; row++){
+            for(int col = 0; col < map[0].length; col++){
+                if(map[row][col] == 'E'){
+                    System.out.print("\nYou have an enemy");
+                    if(row > userRow){
+                        System.out.print(" below you");
+                    }else if(row < userRow){
+                        System.out.print(" above you");
+                    }
 
-        try{
-            surrounding[0] = arr[row][col + 1];
-        }catch(ArrayIndexOutOfBoundsException e){
-        }
+                    if(col > userCol){
+                        System.out.print(" to your right");
+                    }else if(col < userCol){
+                        System.out.print(" to your left");
+                    }
 
-        try{
-            surrounding[1] = arr[row][col - 1];
-        }catch(ArrayIndexOutOfBoundsException e){
-        }
-
-        try{
-            surrounding[2] = arr[row - 1][col];
-        }catch(ArrayIndexOutOfBoundsException e){
-        }
-
-        try{
-            surrounding[3] = arr[row + 1][col];
-        }catch(ArrayIndexOutOfBoundsException e){
-        }
-
-        return surrounding;
-    }
-
-    static boolean checkEncounters(char element){
-
-        boolean output = true;
-        System.out.println(element);
-
-
-        if(element == 'E'){
-            int fight = (int) (Math.random() * 2); // 1 - win 0 lose
-            System.out.println("Enemy encountered!");
-            if(fight == 0){
-                System.out.println("You lost the fight");
-                output = false;
-            }else{
-                System.out.println("You won the fight!");
+                    System.out.print("\n");
+                }
             }
-        }else if(element == 'T'){
-            System.out.println("Congratulations!!\nYou found the treasure");
-        }else if(element == 'O'){
-            System.out.println("There's an obstacle there");
-            output = false;
         }
-
-        return output;
     }
 
     public static void main(String[] args){
@@ -181,11 +153,11 @@ public class TreasureHunt{
                 
                 // Enemy Location
                 if(helpfulItem == 1){
-                    System.out.println("You have an enemy below you");
+                    findEnemies(map, newRow, newCol);
                 }else if(helpfulItem == 0){ // Extra life
                     System.out.println("You got an extra life");
                     lives++;
-                    System.out.println("You have " + lives + " now");
+                    System.out.println("You have " + lives + " live(s) now");
                 }
             }else if(replacedItem == 'T'){
                 System.out.println("Congratulations you found the treasure");
