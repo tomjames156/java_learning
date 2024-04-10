@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TreasureHunt{
 
     static void showMap(char[][] arr){
-        // Show the outline for the map 
+        // Show the outline for the map with the elements in it
 
         for(int x = 0; x < arr.length; x++){
             System.out.println("+---+---+---+---+---+");
@@ -85,6 +85,8 @@ public class TreasureHunt{
         char[] elementsAround = new char[4];
         int row = 0;
         int col = 0;
+        int newRow = row;
+        int newCol = col;
         String move;
         boolean quitGame = false;
         int lives = 1;
@@ -106,8 +108,6 @@ public class TreasureHunt{
         System.out.println("\nLIVES: " + lives + "\n");
         showMap(map);
         
-        int newRow = row;
-        int newCol = col;
 
         while(true){
             char replacedItem = ' ';
