@@ -1,0 +1,113 @@
+# Treasure Hunt Game
+
+## Game Overview
+
+In the "Treasure Hunt" game, the player navigates a grid-based map to find a hidden treasure. 
+The map consists of various cells, some of which may contain obstacles, enemies, or helpful 
+items. The player's goal is to reach the treasure without being stopped by obstacles or enemies.
+
+
+### Pseudocode
+
+CHAR[][] map // 2 dimensional array representing the game's map
+
+/* Player's current position on the map */
+row = 0 
+col = 0
+
+/* Player's desired position on the map. Set initially to current position since the player has not moved yet */
+newRow = row
+newCol = col 
+
+/* Condition to end the game */
+quitGame = FALSE
+
+/* Player's immunity status or lives remaining */
+lives = 1
+
+position player at start position
+
+/* 
+    T - Treasure
+    E - Enemy
+    O - Obstacle
+*/
+
+randomlyPlace 'T' on the map
+randomlyPlace 2 'E' (s) on the map
+randomlyPlace 3 'O' (s) on the map
+randomlyPlace 'H' on the map
+
+// Game Begins
+
+PRINT lives remaining
+
+WHILE condition == TRUE DO
+    replacedItem = ' ' // Item at index the user wants to move to is set to empty
+    /* move is either RIGHT, LEFT, UP or DOWN */
+    INPUT move
+
+    SWITCH move
+        case "RIGHT"
+            newRow++
+        case "LEFT"
+            newRow--
+        case "UP"
+            newCol--
+        case "DOWN"
+            newCol++
+    END SWITCH
+
+
+    /* find item at new index if new index exists. If new index does not exist then reset to previous index before the move was made */
+
+    TRY
+        replacedItem = map[newRow][newCol] // update replacedItem to item at the index user wants to move to
+    CATCH OutofIndex 
+        PRINT "You're at an edge"
+        reset to previous coordinates
+        CONTINUE
+    END TRY
+
+
+    IF replacedItem == 'O' THEN
+        PRINT "There's an obstacle there"
+        reset to previous coordinates
+        CONTINUE
+    ELSE IF replacedItem == 'H' THEN
+        // randomly give the user a helpful item either enemy location or an extra life
+        helpfulItem = random integer ( 0 or 1)
+
+        IF helpfulItem == 1 THEN
+            give enemy location hints
+        ELSE IF helpfulItem == 0 THEN
+            lives++ // give player an extra life
+        ENDIF
+    ELSE IF replacedItem == 'T' THEN
+        PRINT "You found the treasure"
+        quitGame = true
+    ELSE IF replacedItem == 'E' THEN
+        // randomly decide the outcome of the fight with the enemy
+        fightOutcome = random integer (0 or 1)
+
+        IF fightOutcome == 0 THEN
+            lives-- // subtract a life from the player's lives
+
+            IF lives <= 0 THEN
+                quitGame = true
+            ENDIF
+        ELSE IF fightOutcome == 1 THEN
+            PRINT "You won the fight"
+        ENDIF
+    ENDIF
+
+
+    update players position on the map
+
+    IF quitGame == TRUE THEN
+        BREAK
+    ENDIF
+
+ENDWHILE
+
+show the map
