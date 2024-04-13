@@ -82,7 +82,6 @@ public class TreasureHunt{
 
     public static void main(String[] args){
         char[][] map = new char[5][5];
-        char[] elementsAround = new char[4];
         int row = 0;
         int col = 0;
         int newRow = row;
