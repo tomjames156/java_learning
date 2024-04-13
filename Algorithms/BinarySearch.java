@@ -40,6 +40,14 @@ public class BinarySearch{
 
     public static void main(String[] args){
         int[] numbers = {1, 2, 3, 4, 6, 7, 8};
-        find(0, numbers);
+        int[] numbers2 = {10, 3, 5, 4, 1, 9, 8};
+        BubbleSort bubble = new BubbleSort();
+        bubble.sort(numbers2);
+        
+        for(int number : numbers2){
+            System.out.println(number);
+        }
+
+        find(3, numbers);
     }
 }
