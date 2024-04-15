@@ -63,5 +63,36 @@ public class Practise{
         fave.title = "The Alchemist";
         fave.author = "Paul Coehlo";
         System.out.println("My favourite book is " + fave.title + " written by " + fave.author);
+        
+
+        // 8
+        Student courseRep = new Student();
+        courseRep.name = "Shuks";
+        courseRep.rollNumber = 20220388;
+        courseRep.maths = 90;
+        courseRep.science = 80;
+        courseRep.english = 85;
+
+        Student Chuks = new Student();
+        Chuks.name = "Chuks";
+        Chuks.rollNumber = 20220419;
+        Chuks.maths = 90;
+        Chuks.science = 80;
+        Chuks.english = 85;
+
+        Student[] students = {Chuks, courseRep};
+
+        for(Student student: students){
+            System.out.println("\n\nName: " + student.name);
+            System.out.println("Roll Number: " + student.rollNumber);
+            System.out.println("GRADES");
+            System.out.println("Mathematics: " + student.maths);
+            System.out.println("Science: " + student.science);
+            System.out.println("English: " + student.english);
+        }
+        
+        // System.out.println("Student Name: " + courseRep.name);
+        // System.out.print("\n\n");
+        // System.out.println("Student Name: " + courseRep.name);
     }
 }

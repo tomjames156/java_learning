@@ -1,2 +1,4 @@
 Printing multiple variables separated with commas is not possible in Java
 To create a public class it has to be in a file with .java extension
+
+having an array as a class attribute is a lott. figure it out later
