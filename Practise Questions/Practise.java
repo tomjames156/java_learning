@@ -56,5 +56,12 @@ public class Practise{
         System.out.println("My new car is " + blue.color);
         System.out.println("My old car is " + red.color);
         System.out.println("My new car has " + (400 - blue.mileage) + " miles left on it");
+
+        
+        // 7
+        Book fave = new Book();
+        fave.title = "The Alchemist";
+        fave.author = "Paul Coehlo";
+        System.out.println("My favourite book is " + fave.title + " written by " + fave.author);
     }
 }
