@@ -69,16 +69,12 @@ public class Practise{
         Student courseRep = new Student();
         courseRep.name = "Shuks";
         courseRep.rollNumber = 20220388;
-        courseRep.maths = 90;
-        courseRep.science = 80;
-        courseRep.english = 85;
+        courseRep.grades = new int[] {90, 80, 85};
 
         Student Chuks = new Student();
         Chuks.name = "Chuks";
         Chuks.rollNumber = 20220419;
-        Chuks.maths = 90;
-        Chuks.science = 80;
-        Chuks.english = 85;
+        Chuks.grades = new int[] {100, 100, 95};
 
         Student[] students = {Chuks, courseRep};
 
@@ -86,13 +82,36 @@ public class Practise{
             System.out.println("\n\nName: " + student.name);
             System.out.println("Roll Number: " + student.rollNumber);
             System.out.println("GRADES");
-            System.out.println("Mathematics: " + student.maths);
-            System.out.println("Science: " + student.science);
-            System.out.println("English: " + student.english);
+            System.out.println("Mathematics: " + student.grades[0]);
+            System.out.println("Science: " + student.grades[1]);
+            System.out.println("English: " + student.grades[2]);
         }
-        
-        // System.out.println("Student Name: " + courseRep.name);
-        // System.out.print("\n\n");
-        // System.out.println("Student Name: " + courseRep.name);
+
+
+        // 9
+        GeoPoint[] places = new GeoPoint[2];
+        GeoPoint nileUni = new GeoPoint();
+        nileUni.name = "Nile University";
+        nileUni.x = 7.398;
+        nileUni.y = 9.016;
+        places[0] = nileUni;
+
+        GeoPoint metMuseum = new GeoPoint();
+        metMuseum.name = "The Metropolitan Museum of Art";
+        metMuseum.x = 73.9631;
+        metMuseum.y = 40.7794;
+        places[1] = metMuseum;
+
+        System.out.println("\n\n");
+        for(GeoPoint place : places){
+            System.out.println(place.name + " is located at " + place.x + " deg E, " + place.y + " deg N on the earth");
+        }
+
+
+        // PQ 2
+        // 1
+        Circle circle = new Circle();
+        circle.radius = 7;
+        circle.calculateArea();
     }
 }

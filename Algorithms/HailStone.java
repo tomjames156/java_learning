@@ -21,7 +21,24 @@ public class HailStone{
         return list;
     }
 
+    static void getSequence(int n){
+        System.out.println(n);
+
+        if(n == 1){
+            return;
+        }
+
+        if(n % 2 == 0){
+            n = n / 2;
+        }else if(n % 2 == 1 && n != 1){
+            n = (3 * n) + 1;
+        }
+
+        getSequence(n);
+    }
+
     public static void main(String[] args){
-        hailStone(5);
+        System.out.println(hailStone(5));
+        getSequence(3);
     }
 }
