@@ -4,7 +4,7 @@ Class is a blueprint for an object which contains the attributes/variables and m
 Inheritance is a method that allows code reusability when a class shares similar properties with another class.
 Classes are just a logical definition while objects are physically represented data that have the properties and can perform methods.
 Abstraction is the process of reducing complexity by hiding the internal implementation details of a program or process and showing only necessary information.
-Encapsulation involves bundling of data and methods that operate on the data within a single unit. This is called an object in Java
+Encapsulation involves bundling of data and methods that operate on the data within a single unit. This is called an object in Java. The purpose of encapsulation is to hide sensitive data from the users and it involves using getters and setters on the attributes.
 Polymorphism allows the same functionality to give behave differently based on the object that called it. It involves overloading (data types) and overriding (modding the func).
 
 Curly braces define the scope of the program. If after class header - scope of class
@@ -61,5 +61,6 @@ static - belongs to the class and not objects
 abstract - used only on methods and the body is not provided. Instead, the body is defined by the subclass. (class that inherits it)
 
 The 'this' keyword is important in differentiating between the attributes of a class and it's method or constructor parameter when they have the same name.
+The 'this' keyword cannot be accessed in static methods or constructors cus there might be no object to reference Kapeesh
 
 TODO - How to access classes between packages and that Linear algebra stuff
