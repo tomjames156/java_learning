@@ -32,7 +32,34 @@ Block Scope btw curly braces if-else block, Method Scope within a method. There'
 Variables defined in a class are called attributes
 For methods, methods that have the static keyword can be accessed without having to create an object of the class while you need to create an object to use public methods
 
-Constructors are special functions used to initialize objects. You can initialize the attributes of an object using constructors making it easier to put the values rather than using the dot syntax.
-The parameter names for the constructor must differ from the objcets actual attributes tho
+When calling a static method within the class it's defined, you dont have to use the class name first, but you have to do that if youre not inside the class. But good practise is to use the class name
 
-Always put data types for function parameters
+Constructors are special method used to initialize objects. You can initialize the attributes of an object using constructors making it easier to put the values rather than using the dot syntax.
+The parameter names for the constructor must differ from the objcets actual attributes tho. Just put an underscore before the attribute name
+Construtors should not have return type
+A better way could also be using the this keyword.
+
+Always put data types for method parameters
+Always use the class name when calling a static method
+
+Access Modifiers:
+Classes - public & default
+Methods, attributes and constructor - public, private, default & protected 
+public - accessible by all other Classes
+private - accessible only within the class where it's defined
+protected - accessible within the package and in its subclasses
+default - accessible within the package
+
+Non-Access Modifiers:
+Classes - final & abstract
+final - cannot be inherited by other classes
+abstract - cannot be used to created objects can only be inherited
+
+Methods, attributes and constructors
+final - cannot be modified or overriden
+static - belongs to the class and not objects
+abstract - used only on methods and the body is not provided. Instead, the body is defined by the subclass. (class that inherits it)
+
+The 'this' keyword is important in differentiating between the attributes of a class and it's method or constructor parameter when they have the same name.
+
+TODO - How to access classes between packages and that Linear algebra stuff

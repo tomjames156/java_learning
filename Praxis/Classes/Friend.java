@@ -7,16 +7,17 @@ public class Friend{
     boolean isMarried = false;
     final String[] pronouns = {"They", "Them", "They're"};
 
-    public Friend(String fName, String lName, int currAge, String firstMeet, boolean isMarriedYet){
-        fname = fName;
-        lname = lName;
-        age = currAge;
-        firstMet = firstMeet;
-        isMarried = isMarriedYet;
+    // constructor
+    public Friend(String fname, String _lname, int age, String _firstMet, boolean _isMarried){
+        this.fname = fname;
+        lname = _lname;
+        this.age = age;
+        firstMet = _firstMet;
+        isMarried = _isMarried;
     }
 
-    static void intro(String fname){
-        System.out.println("Hi my name is " + fname + '.');
+    public void intro(){
+        System.out.println("Hi my name is " + this.fname + '.');
     }
 
     static void intro(String fname, String lname){
@@ -35,7 +36,7 @@ public class Friend{
         // Faridah.lname = "Okeniyi";
         // Faridah.age = 20;
         // Faridah.firstMet = "Primary School";
-        intro(Faridah.fname);
+        Faridah.intro();
         intro(Faridah.fname, Faridah.lname);
         Faridah.intro(Faridah.fname, Faridah.lname, Faridah.age);
 
