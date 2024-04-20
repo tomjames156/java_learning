@@ -17,7 +17,7 @@ public class Friend{
     }
 
     public void intro(){
-        System.out.println("Hi my name is " + this.fname + '.');
+        System.out.println("Hi my name is " + fname + ".");
     }
 
     static void intro(String fname, String lname){

@@ -17,5 +17,10 @@ public class Main{
 
         System.out.println(Car.description);
         System.out.println("I have $" + myCash + " in my account");
+
+        Student Noah = new Student();
+        Noah.setFullName("Noah", "Akinwande", "");
+        Noah.setGPA(4.95F);
+        System.out.println(Noah.getFname() + " " + Noah.getLname() + " did very well this semester. He got a " + Noah.getGPA());
     }
 }
