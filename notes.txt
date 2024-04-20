@@ -1,0 +1,38 @@
+Object oriented programming is a programming concept that focuses on creation of objects rather than actions/functions and data rather than logic. It involves building programs using Objects and Classes.
+General concepts in OOP - Object, class, Encapsulation, Inheritance, Polymorphism and Abstraction
+Class is a blueprint for an object which contains the attributes/variables and methods defined for the object.
+Inheritance is a method that allows code reusability when a class shares similar properties with another class.
+Classes are just a logical definition while objects are physically represented data that have the properties and can perform methods.
+Abstraction is the process of reducing complexity by hiding the internal implementation details of a program or process and showing only necessary information.
+Encapsulation involves bundling of data and methods that operate on the data within a single unit. This is called an object in Java
+Polymorphism allows the same functionality to give behave differently based on the object that called it. It involves overloading (data types) and overriding (modding the func).
+
+Curly braces define the scope of the program. If after class header - scope of class
+After method - scope of method
+The main method is the first thing the program will run and the args variable name can actually be any name
+Comments, class headers and method headers are not seen as Java statements
+If any value on either side of a + is a string then it will concatenate and not add.
+String literal values cannot normally span multiple lines
+byte is also a primitive data type
+float - single precision for floating point numbers while double is - double precision
+Floating point literals are double by default so you have to put the F keyword after the literal to convert it to a float. Also dividing 2 int literals doesn't give an automatic float, you have to add F to them both to make them floats
+Local vars can be declared and initialized on the same line
+Primitive vars and Reference vars
+Prim vars are vars that hold prim data types and these vars hold the memory location of the value stored in it and the value itself while reference vars or pointers only hold the address where the object is stored
+Strings are the only object that can be assigned literal values i.e without having to use the new keyword althogh they can be created with the new keyword
+String length is a method e.g myString.length()
+After writing a do while loop, there should be a semi-colon after the condition.
+For loops have initialisation, condition, and iteration
+The for each syntax can only be used on arrays
+Methods must be defined within a class. the keyword static on a method means that the method belongs to the class its contained in and not an instance (or object) of the class. Static can also be used on variables
+In Java all the functions are called methods since theyre within class
+Scope basically refers to the region where a variable was created.
+Block Scope btw curly braces if-else block, Method Scope within a method. There's no global scope in Java
+
+Variables defined in a class are called attributes
+For methods, methods that have the static keyword can be accessed without having to create an object of the class while you need to create an object to use public methods
+
+Constructors are special functions used to initialize objects. You can initialize the attributes of an object using constructors making it easier to put the values rather than using the dot syntax.
+The parameter names for the constructor must differ from the objcets actual attributes tho
+
+Always put data types for function parameters

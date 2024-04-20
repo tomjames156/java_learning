@@ -22,10 +22,12 @@ public class HailStone{
     }
 
     static void getSequence(int n){
-        System.out.println(n);
+        System.out.print(n);
 
-        if(n == 1){
+        if(n < 1){
             return;
+        }else{
+            System.out.print(", ");
         }
 
         if(n % 2 == 0){
@@ -39,6 +41,6 @@ public class HailStone{
 
     public static void main(String[] args){
         System.out.println(hailStone(5));
-        getSequence(3);
+        getSequence(-5);
     }
 }

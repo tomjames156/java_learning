@@ -25,7 +25,7 @@ public class BubbleSort{
     }
 
     public static void main(String[] args){
-        int[] numbers = {2, 7, 89, 9, 3, 300, 1, 5, 1010};
+        final int[] numbers = {2, 7, 89, 9, 3, 300, 1, 5, 1010};
         
         sort(numbers);
 
