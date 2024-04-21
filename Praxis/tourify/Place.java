@@ -1,5 +1,3 @@
-package tourify;
-
 public class Place{
     private String name;
     private float rating;
@@ -9,7 +7,7 @@ public class Place{
         return this.name;
     }
 
-    public void setName(name){
+    public void setName(String name){
         this.name = name;
     }
 
@@ -17,15 +15,15 @@ public class Place{
         return this.rating;
     }
 
-    public void setRating(rating){
-        this.name = rating;
+    public void setRating(float rating){
+        this.rating = rating;
     }
 
     public String getAddress(){
         return this.address;
     }
 
-    public void setAddress(address){
+    public void setAddress(String address){
         this.address = address;
     }
 }
