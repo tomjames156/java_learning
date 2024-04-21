@@ -1,4 +1,4 @@
-class Car{
+public class Car{
 
     int currentSpeed = 30;
     String brand;
