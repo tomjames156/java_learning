@@ -21,6 +21,6 @@ public class Main{
         Student Noah = new Student();
         Noah.setFullName("Noah", "Akinwande", "");
         Noah.setGPA(4.95F);
-        System.out.println(Noah.getFname() + " " + Noah.getLname() + " did very well this semester. He got a " + Noah.getGPA());
+        System.out.println(Noah.getFname() + " " + Noah.getLname().toUpperCase() + " did very well this semester. He got a " + Noah.getGPA());
     }
 }

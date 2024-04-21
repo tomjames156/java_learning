@@ -64,4 +64,16 @@ The 'this' keyword is important in differentiating between the attributes of a c
 The 'this' keyword cannot be accessed in static methods or constructors cus there might be no object to reference Kapeesh.
 The this keyword refers to the object. You can use the attribute name directly in a method (not to set or initialise) if you haven't used any parameter that are the same as it's name
 
+Benefits of encapsulation:
+better control over attr and methods
+security of data
+can make the class read only (getters only) or write only (setters only)
+make changes without disrupting the codebase
+
+In the System class, the .out is an object from a class called PrintStream
+Class/Static attr/data & Class/Static methods - acc w/o creating an instance or directly from the class
+Non-static/Instance methods/data - have to create an instance of the class or an object to use them
+
+String methods - indexOf, charAt, startsWith, endsWith, lastIndexOf, toUpperCase, toLowerCase, concat, length, trim, valueOf and substring
+
 TODO - How to access classes between packages and that Linear algebra stuff

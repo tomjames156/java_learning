@@ -48,6 +48,9 @@ public class Friend{
         // Destiny.isMarried = true;
         // Destiny.pronouns = new String[] {"He", "Him", "He's"};
 
+        System.out.println(Faridah.fname.indexOf(0x69));
+        System.out.println(Faridah.fname.concat("-na"));
+
         Friend[] friends = {Faridah, Destiny};
 
         for(Friend friend : friends){
