@@ -2,12 +2,12 @@ package mypackage;
 
 public class Friend{
 
-    String fname;
-    String lname;
-    int age;
-    String firstMet = "Nile University";
-    boolean isMarried = false;
-    final String[] pronouns = {"They", "Them", "They're"};
+    public String fname;
+    public String lname;
+    public int age;
+    public String firstMet = "Nile University";
+    public boolean isMarried = false;
+    public final String[] pronouns = {"They", "Them", "They're"};
 
     // constructor
     public Friend(String fname, String _lname, int age, String _firstMet, boolean _isMarried){
@@ -19,7 +19,7 @@ public class Friend{
     }
 
     public void intro(){
-        System.out.println("Hi my name is " + fname + ".");
+        System.out.println("Hi my name is " + this.fname + ".");
     }
 
     static void intro(String fname, String lname){

@@ -2,9 +2,9 @@ package mypackage;
 
 public class Car{
 
-    int currentSpeed = 30;
-    String brand;
-    String colour;
+    public int currentSpeed = 30;
+    public String brand;
+    public String colour;
     static final String description = "\nThis is a class that represents a Car with attributes like: \n\t- currentSpeed, \n\t- brand \n\t- colour. \nIt does not use a constructor\n";
 
     // private Car(int _currentSpeed, String _brand, String _colour){

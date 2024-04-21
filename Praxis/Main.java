@@ -1,4 +1,5 @@
 import java.math.BigInteger;
+import mypackage.*;
 
 public class Main{
 
@@ -12,10 +13,10 @@ public class Main{
         subaru.colour = "red";
         subaru.brand = "Subaru";
 
-        subaru.fullThrottle();
+        // subaru.fullThrottle(); // static method
         subaru.speed(subaru.currentSpeed);
 
-        System.out.println(Car.description);
+        // System.out.println(Car.description); // static method
         System.out.println("I have $" + myCash + " in my account");
 
         Student Noah = new Student();

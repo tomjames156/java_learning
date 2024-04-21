@@ -57,7 +57,7 @@ abstract - cannot be used to created objects can only be inherited
 
 Methods, attributes and constructors
 final - cannot be modified or overriden
-static - belongs to the class and not objects
+static - belongs to the class and not objects. Cannot be accessed outside the package.
 abstract - used only on methods and the body is not provided. Instead, the body is defined by the subclass. (class that inherits it)
 
 The 'this' keyword is important in differentiating between the attributes of a class and it's method or constructor parameter when they have the same name.
