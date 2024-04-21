@@ -26,4 +26,8 @@ public class Place{
     public void setAddress(String address){
         this.address = address;
     }
+
+    public void about(){
+        System.out.println("Have you heard of " + this.name + " in " + this.address);
+    }
 }
