@@ -1,3 +1,5 @@
+package tourify;
+
 public class Place{
     private String name;
     private float rating;
