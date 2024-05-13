@@ -26,5 +26,19 @@ public class Main{
         nileUni.setAddress("Airport Road");
         nileUni.setName("Nile University of Nigeria");
         nileUni.about();
+
+        Place suyaCraze;
+        suyaCraze = new Place();
+        suyaCraze.setAddress("Nile University");
+        suyaCraze.setName("Suya Craze");
+        suyaCraze.setRating(4.0F);
+
+        suyaCraze.about();
+
+        suyaCraze = new Restaurant();
+        suyaCraze.setBudget(new int[] {2200, 5000});
+        // suyaCraze.setType("Cafe");
+        // suyaCraze.setBudget(new int[] {2200, 5000});
+        suyaCraze.about();
     }
 }

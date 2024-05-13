@@ -105,7 +105,7 @@ public class TreasureHunt{
         // randomly place a hidden item on the map
         placeItem('H', map);
         System.out.println("\nLIVES: " + lives + "\n");
-        showMap(map);
+        // showMap(map);
         
 
         while(true){
@@ -124,6 +124,9 @@ public class TreasureHunt{
                     break;
                 case "DOWN":
                     newRow++;
+                    break;
+                case "Q":
+                    quitGame = true;
                     break;
                 default:
                     System.out.println("Invalid Input");
@@ -185,11 +188,12 @@ public class TreasureHunt{
             map[newRow][newCol] = 'P';
             row = newRow;
             col = newCol;
-            showMap(map);
             
             if(quitGame){
                 break;
             }
         }
+
+        showMap(map);
     }
 }

@@ -77,3 +77,16 @@ Non-static/Instance methods/data - have to create an instance of the class or an
 String methods - indexOf, charAt, startsWith, endsWith, lastIndexOf, toUpperCase, toLowerCase, concat, length, trim, valueOf and substring
 
 TODO - How to access classes between packages and that Linear algebra stuff
+
+Inheritance 
+superclass and subclass
+
+Polymorphism makes a piece of code like a method to act differently based on the object that calls it. For inheritance Polymorphism can be seen when a sub and super class have a method that has the same name and the method in the sub class overrides that of the super class when the sub class calls the method.
+
+Method overriding
+Method overloading - params are diff 
+Operator overloading - operators like + are overloaded for both string concatenation and integer summation
+Logical operators are used for both logical operations and bitwise operations
+Polymorphic variables: so variables in java can refer to a class or its sub classes
+
+ASK About polymorphic variables and that inheritance issue

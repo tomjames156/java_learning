@@ -1,9 +1,19 @@
 import java.math.BigInteger;
+import java.util.*;
 import mypackage.*;
 
 public class Main{
 
     public static void main(String[] args){
+
+        List<Integer> myNumbers = new ArrayList<Integer>();
+        myNumbers.add(0);
+        myNumbers.add(2);
+        myNumbers.add(4);
+        myNumbers.add(10);
+        myNumbers.add(6);
+
+        System.out.println(myNumbers.get(3));
 
         BigInteger myCash = BigInteger.valueOf(1900000000);
 
