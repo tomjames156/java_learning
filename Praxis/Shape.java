@@ -24,6 +24,10 @@ public class Shape{
 
         box.calculateArea();
 
+        Square stickyNote = new Square();
+        stickyNote.length = 8F;
+        System.out.println("Your note has a capacity of " + stickyNote.calculateArea() + " m^2");
+
         System.out.println("Area: " + s1.calculateArea());
 
         System.out.println("The area of the earth is " + earth.calculateArea() + "km squared");
