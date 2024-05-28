@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*; 
 import java.io.*;
 
 public class JPITests{
@@ -25,6 +25,10 @@ public class JPITests{
 
             while((i = buff.read()) != -1){
                 System.out.print((char)i);
+            }
+
+            if(buff.ready()){
+                System.out.println(buff.readLine());
             }
 
             buff.close();
