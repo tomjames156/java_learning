@@ -1,3 +1,5 @@
+package tourify;
+
 public final class Restaurant extends Place{
     private String restType;
     private int[] budget;

@@ -1,3 +1,5 @@
+package tourify;
+
 public class Museum extends Place{
     private int[] budget;
 
