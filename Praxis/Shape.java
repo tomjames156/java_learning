@@ -1,4 +1,5 @@
 import java.util.*;
+import models.Person;
 
 public class Shape{
 
@@ -31,6 +32,14 @@ public class Shape{
         System.out.println("Area: " + s1.calculateArea());
 
         System.out.println("The area of the earth is " + earth.calculateArea() + "km squared");
+
+        // final int B_DAY = 28;
+        // B_DAY++;
+        // System.out.println(B_DAY);
+
+        Person tomi = new Person(20, "Tomi", "Lagos");
+        tomi.introduce();
+        Person timone = new Person(18, "Timone", "Port Harcourt");
 
     }
 }

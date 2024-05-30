@@ -10,5 +10,9 @@ public class Person{
         name = _name;
         from = _from;
     }
+
+    public void introduce(){
+        System.out.println(name + ": Hi I'm " + name + ". I am " + age + " years old from " + from + ".");
+    }
     
 }
