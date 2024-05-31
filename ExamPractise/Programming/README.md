@@ -11,6 +11,6 @@
 # Polymorphism
 
 - The ability of a reference variable to behave different based on the object instance it holds. 
-IMPORTANT!!! Above Syntax doesnt work on my vscode, try it on someone's system
-Works on online compiler though
+So something like the way when you create a list being implemented as either an array list or a linked list
 NOTE: Always put data types in methods and constructors
+Run with java instead of VSCODE
