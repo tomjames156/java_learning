@@ -1,3 +1,5 @@
+import shapes.*;
+
 public class App {
     public static void main(String[] args){
 
@@ -18,9 +20,18 @@ public class App {
         // tomi.shimmer();
 
 
-        A pointA = new A(0, 1);
-        B pointB = new B(2, 1, 1);
-        pointA.show();
-        pointB.show();
+        // A pointA = new A(0, 1);
+        // B pointB = new B(2, 1, 1);
+        // pointA.show();
+        // pointB.show();
+
+        Figure box = new Rectangle(3, 4);
+        System.out.println("Area: "  + box.area() + "m^2");
+
+        Figure samosa = new Triangle(4.65, 7.88);
+        System.out.println("Area: "  + samosa.area() + "m^2");
+
+        Figure shadow = new Figure(4, 5);
+        System.out.println("Area: "  + shadow.area() + "m^2");
     }
 }
