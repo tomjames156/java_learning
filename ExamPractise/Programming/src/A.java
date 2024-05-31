@@ -14,6 +14,6 @@ public class A{
      */
 
     public void show(){
-        System.out.println("i and j = " + i + " and " + j);
+        System.out.println("Point A (x, y) = " + "(" + i + ", " + j + ")");
     }
 }

@@ -19,6 +19,8 @@ public class App {
 
 
         A pointA = new A(0, 1);
+        B pointB = new B(2, 1, 1);
         pointA.show();
+        pointB.show();
     }
 }
