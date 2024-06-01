@@ -25,3 +25,5 @@ Any class that inherits from an abstract class must implem all the abstract meth
 
 Java does not support optional parameters, however with method overloading you can have that same functionality
 The @Override keyword is used to show that a subclass method overrides the super class'. The subclass must also have the same number of args and type of args for the override to not return an error
+
+Abstract classes can still be used to create reference variables to its subclasses

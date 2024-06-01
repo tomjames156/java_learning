@@ -26,11 +26,16 @@ public class App {
         // pointA.show();
         // pointB.show();
 
-        Rectangle box = new Rectangle(3, 4);
-        System.out.println("Area: "  + box.area() + "m^2");
+        Figure figRef;
+
+        // abstract class used as interface
+        Figure box = new Rectangle(3, 4);
+        figRef = box;
+        System.out.println("Area: "  + figRef.area() + "m^2");
 
         Triangle samosa = new Triangle(4.65, 7.88);
-        System.out.println("Area: "  + samosa.area() + "m^2");
+        figRef = samosa;
+        System.out.println("Area: "  + figRef.area() + "m^2");
 
         // No longer possible since Figure is not abstract
         // Figure shadow = new Figure(4, 5);

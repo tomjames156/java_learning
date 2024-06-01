@@ -1,6 +1,6 @@
 package shapes;
 
-public class Figure {
+public abstract class Figure {
     double dim1;
     double dim2;
 
@@ -9,8 +9,5 @@ public class Figure {
         dim2 = _dim2;
     }
 
-    public double area(){
-        System.out.println("No Area specified for Figure");
-        return 0;
-    }
+    public abstract double area();
 }
