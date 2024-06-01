@@ -1,4 +1,5 @@
 import shapes.*;
+import abstraction.*;
 
 public class App {
     public static void main(String[] args){
@@ -25,13 +26,23 @@ public class App {
         // pointA.show();
         // pointB.show();
 
-        Figure box = new Rectangle(3, 4);
+        Rectangle box = new Rectangle(3, 4);
         System.out.println("Area: "  + box.area() + "m^2");
 
-        Figure samosa = new Triangle(4.65, 7.88);
+        Triangle samosa = new Triangle(4.65, 7.88);
         System.out.println("Area: "  + samosa.area() + "m^2");
 
-        Figure shadow = new Figure(4, 5);
-        System.out.println("Area: "  + shadow.area() + "m^2");
+        // No longer possible since Figure is not abstract
+        // Figure shadow = new Figure(4, 5);
+        // System.out.println("Area: "  + shadow.area() + "m^2");
+
+        Landline rotary = new Landline("Panasonic");
+        System.out.println(rotary.getModel());
+        rotary.call("09096387710");
+        rotary.sendMessage("Hey Naz", "08012355789");
+
+        MobilePhone pixel = new MobilePhone("Google Pixel 6a");
+        pixel.call("08125887094", "Mummy");
+        pixel.sendMessage("09056877719", "Daddy, please I need more money");
     }
 }
