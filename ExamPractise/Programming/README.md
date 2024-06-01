@@ -27,3 +27,9 @@ Java does not support optional parameters, however with method overloading you c
 The @Override keyword is used to show that a subclass method overrides the super class'. The subclass must also have the same number of args and type of args for the override to not return an error
 
 Abstract classes can still be used to create reference variables to its subclasses
+Abstract and final keywords cannot be used on the same class because abstract classs need inheritance
+
+The final keyword can be used to prevent overriding of methods, reassignment of variables, and inheritance from a specific class.
+Encapsulation involves declaring the class attributes as private to hide the inner implementation of the class and to prevent inadvertent modification of the attributes in other parts of the prog. 
+To modify the class or obj you use the public methods avail in the class.
+Encapsulation makes use of state and behaviours - state meaning the attributes/fields and behaviours are the methods/getters and setters in the same place.

@@ -11,7 +11,7 @@ public abstract class Phone {
 
     abstract void sendMessage(String message, String number);
 
-    public String getModel(){
+    public final String getModel(){
         return model;
     }
 }
