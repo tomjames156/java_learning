@@ -16,5 +16,6 @@ public class Main{
 
 /**
  * BUGS FOUND
- * 1. 
+ * 1. Array list is zero-indexed
+ * - For the sentinel value escape or invalid score, print something out
  */
