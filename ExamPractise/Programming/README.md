@@ -33,3 +33,9 @@ The final keyword can be used to prevent overriding of methods, reassignment of 
 Encapsulation involves declaring the class attributes as private to hide the inner implementation of the class and to prevent inadvertent modification of the attributes in other parts of the prog. 
 To modify the class or obj you use the public methods avail in the class.
 Encapsulation makes use of state and behaviours - state meaning the attributes/fields and behaviours are the methods/getters and setters in the same place.
+
+Method Overloading can be done in 3 ways
+Method overloading is basically having a method with the same name in the same class with different implementations signatures
+- Having different number of parameters
+- Having different types of the parameters
+- Changing the order of the parameters
