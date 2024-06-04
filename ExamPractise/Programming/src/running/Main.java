@@ -41,5 +41,5 @@ public class Main{
  * 4. For the calculation, let the last item outside the first bracket be without a bracket. Only one bracket is necessary for each conversion
  * - If you put a number w decimal make sure to add F at the end
  * - To get a char as input from the scanner, use nextline().charAt(0)
- * 5. Scanner class is in the java.util package and dont forget to add the String[] args to the main function
+ * 5. Scanner class is in the java.util package and dont forget to add the String[] args to the main function. Always close the scanner object to avoid memory leakages
  */

@@ -15,6 +15,14 @@ public class Person {
     System.out.println("\nPerson Name: " + name);
     return name;
   }
+
+  public boolean canVote(int age){
+    if(age >= 18){
+      return true;
+    }else{
+      return false;
+    }
+  }
   
   public static void main(String[] args) {
     
@@ -40,5 +48,13 @@ public class Person {
     ref = busola;
     ref.getName();
     ref.intro();
+
+    boolean eligibility = busola.canVote(17);
+
+    if(eligibility){
+      System.out.println(busola.name + " is eligible to vote.");
+    }else{
+      System.out.println(busola.name + " is ineligible to vote.");
+    }
   }
 }
