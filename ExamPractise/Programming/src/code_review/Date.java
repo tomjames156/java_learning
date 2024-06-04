@@ -24,6 +24,24 @@ public class Date {
             System.out.println(n);
     }
 
+
+    /**
+     * A method that gets the longest word in a collection of words
+     * @param words a collection of words as a list
+     * @return the longest word in the collection
+     */
+    public static String getLongestWord(List<String> words){
+        String longest = "";
+
+        for(String word : words){
+            if(word.length() > longest.length()){
+                longest = word;
+            }
+        }
+
+        return longest;
+    }
+
     public static boolean smellyLeap(int y) {
         // bad variable name tmp and the method name itself even the parameter name
         // poor styling convention or no styling convention (no use of curly braces and inconsistent indentation)
@@ -145,13 +163,14 @@ public class Date {
         }
         
         List<String> words = new ArrayList<String>();
-        // words.add("Hi,");
-        // words.add("my");
-        // words.add("namely");
-        // words.add("is");
-        // words.add("Rasta");
+        words.add("Hi,");
+        words.add("my");
+        words.add("namely");
+        words.add("is");
+        words.add("Rastafarian");
 
         countLongWords(words);
         System.out.println(longestWord);
+        System.out.println(getLongestWord(words));
     }
 }

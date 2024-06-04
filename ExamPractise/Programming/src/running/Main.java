@@ -17,46 +17,46 @@ public class Main{
 
     public static void main(String[] args){
 
-        // System.out.println("Enter the day of the week");
-        // Scanner myScanner = new Scanner(System.in);
-        // String dayOfTheWeek = myScanner.nextLine();
+        System.out.println("Enter the day of the week");
+        Scanner myScanner = new Scanner(System.in);
+        String dayOfTheWeek = myScanner.nextLine();
         
-        // switch(dayOfTheWeek){
-        //     case "Monday":
-        //         System.out.println("Ughhh its Monday");
-        //         break;
-        //     case "Tuesday":
-        //         System.out.println("It's the day after Monday");
-        //         break;
-        //     case "Wednesday":
-        //         System.out.println("Halfway through the week");
-        //         break;
-        //     case "Thursday":
-        //         System.out.println("One more day to go");
-        //         break;
-        //     case "Friday":
-        //         System.out.println("TGIF!!!");
-        //         break;
-        //     default:
-        //         System.out.println("It's the Weekend");
-        // }
+        switch(dayOfTheWeek){
+            case "Monday":
+                System.out.println("Ughhh its Monday");
+                break;
+            case "Tuesday":
+                System.out.println("It's the day after Monday");
+                break;
+            case "Wednesday":
+                System.out.println("Halfway through the week");
+                break;
+            case "Thursday":
+                System.out.println("One more day to go");
+                break;
+            case "Friday":
+                System.out.println("TGIF!!!");
+                break;
+            default:
+                System.out.println("It's the Weekend");
+        }
 
-        // Animal tiger = new Animal("cat", "Tiger", "land");
-        // tiger.speak();
+        Animal tiger = new Animal("cat", "Tiger", "land");
+        tiger.speak();
 
-        // Reptile anaconda = new Reptile("Anaconda", "land");
-        // anaconda.speak();
+        Reptile anaconda = new Reptile("Anaconda", "land");
+        anaconda.speak();
 
-        // Temperature freezing = new Temperature(0);
-        // System.out.println("The freezing point of water is " + freezing.value + "deg C or " + freezing.toFarenheit() + "deg F");
+        Temperature freezing = new Temperature(0);
+        System.out.println("The freezing point of water is " + freezing.value + "deg C or " + freezing.toFarenheit() + "deg F");
 
-        // Temperature boiling = new Temperature(212);
-        // System.out.println("The boiling point of water is " + boiling.value + "deg F or " + boiling.toCelsius() + " deg C" );
+        Temperature boiling = new Temperature(212);
+        System.out.println("The boiling point of water is " + boiling.value + "deg F or " + boiling.toCelsius() + " deg C" );
 
-        // Temperature roomTemp = new Temperature(66.7F);
-        // System.out.println("The average room temperature is " + roomTemp.value + "deg C or " + roomTemp.convert() + " deg F");
+        Temperature roomTemp = new Temperature(66.7F);
+        System.out.println("The average room temperature is " + roomTemp.value + "deg C or " + roomTemp.convert() + " deg F");
 
-        // myScanner.close();
+        myScanner.close();
 
         Employee tomi = new Employee("Tomisin", 2024, 500000, "Abuja, Nigeria", 4);
         Employee temi = new Employee("Temitope", 2022, 600000, "Abuja, Nigeria", 6);
