@@ -1,9 +1,34 @@
 package code_review;
 
-public class Date {
+import java.util.*;
 
+public class Date {
+    public static int myBdayYear = 2005;
+
+    public static int LONG_WORD_LENGTH = 5;
+    public static String longestWord;
+
+    public static void countLongWords(List<String> words) {
+        // bad method name, unclear variable n
+        // poor use of whitespace, inconsistent indentation, no use of curly braces
+        // prints out result instead of returning it
+        // uses global variables for computation
+        // no comments or specification
+        // repitition in different ways for the word length
+        int n = 0;
+        longestWord = "";
+        for (String word: words) {
+            if (word.length() > LONG_WORD_LENGTH) ++n;
+            if (word.length() > longestWord.length()) longestWord = word;
+            }
+            System.out.println(n);
+    }
 
     public static boolean smellyLeap(int y) {
+        // bad variable name tmp and the method name itself even the parameter name
+        // poor styling convention or no styling convention (no use of curly braces and inconsistent indentation)
+        // bad comments R1, R2, R3, R4
+        // assumes that the year is going to be a 4 digit number
         String tmp = String.valueOf(y);
         if (tmp.charAt(2) == '1' || tmp.charAt(2) == '3' || tmp.charAt(2) == 5 || tmp.charAt(2) == '7' || tmp.charAt(2) == '9') {
         if (tmp.charAt(3)=='2'||tmp.charAt(3)=='6') return true; /*R1*/
@@ -17,6 +42,29 @@ public class Date {
         }
         return false; /*R5*/
        }
+
+    /**
+     * A method that checks if a year is a leap year
+     * @param year (integer)
+     * @return boolean (true / false)
+     */
+    public static boolean isLeapYear(final int year){
+        myBdayYear -= 1; // modifying the global variable
+        int yearCopy = year;
+        
+        // check if year is divisible by 4
+        if(yearCopy % 4 == 0){
+            
+            // for a century, check if year is divisible by 400
+            if((yearCopy % 100 == 0) && (yearCopy % 400 != 0)){
+                return false;
+            }else{
+                return true;
+            }
+        }else{
+            return false;
+        }
+    }
     
     public static int smellyDayOfYear(int month, int dayOfMonth, int year) {
         // Smelly code
@@ -83,5 +131,27 @@ public class Date {
         System.out.println("Today is the Day " + Date.smellyDayOfYear(5, 3, 2025) + " of 2025.");
 
         System.out.println("Today is the Day " + Date.dayOfTheYear(2, 28, 2025) + " of 2025.");
+
+        Scanner yearScanner = new Scanner(System.in);
+        System.out.println("Enter a year to check if it's a leap year");
+        System.out.print("> ");
+        int testYear = yearScanner.nextInt();
+        yearScanner.close();
+
+        if(Date.isLeapYear(myBdayYear)){
+            System.out.println("The year " + testYear + " is a leap year");
+        }else{
+            System.out.println("The year " + myBdayYear + " is not a leap year"); // returns an answer with the year off by one year
+        }
+        
+        List<String> words = new ArrayList<String>();
+        // words.add("Hi,");
+        // words.add("my");
+        // words.add("namely");
+        // words.add("is");
+        // words.add("Rasta");
+
+        countLongWords(words);
+        System.out.println(longestWord);
     }
 }
