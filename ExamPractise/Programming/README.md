@@ -16,7 +16,7 @@ NOTE: Always put data types in methods and constructors
 Run with java instead of VSCODE
 
 # Abstraction
-A way of hiding the implementation details of a class or method by making it to be handles by the subclass. Usually done when the implementation details are not sufficient in the super class. They also help to define the struct w/o the implm details.
+A way of hiding the implementation details of a class or method by making it to be handled by the subclass. Usually done when the implementation details are not sufficient in the super class. They also help to define the struct w/o the implm details.
 Abs classes cannot be used to create objects, must be inherited / cannot be instantiated
 Abs methods do not have any body, the body is prov by the subclass which autom overrides the abs method in the super class
 

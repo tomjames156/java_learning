@@ -23,11 +23,11 @@ Strings are the only object that can be assigned literal values i.e without havi
 String length is a method e.g myString.length()
 After writing a do while loop, there should be a semi-colon after the condition.
 For loops have initialisation, condition, and iteration
-The for each syntax can only be used on arrays
+The for each syntax can only be used on arrays & collections
 Methods must be defined within a class. the keyword static on a method means that the method belongs to the class its contained in and not an instance (or object) of the class. Static can also be used on variables
 In Java all the functions are called methods since theyre within class
 Scope basically refers to the region where a variable was created.
-Block Scope btw curly braces if-else block, Method Scope within a method. There's no global scope in Java
+Block Scope btw curly braces if-else block, Method Scope within a method. There's no global scope in Java (there is actually)
 
 Variables defined in a class are called attributes
 For methods, methods that have the static keyword can be accessed without having to create an object of the class while you need to create an object to use public methods

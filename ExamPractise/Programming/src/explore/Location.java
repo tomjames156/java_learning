@@ -39,5 +39,18 @@ public class Location{
         akaraCafe.addItem("Pap");
         akaraCafe.addItem("Hot chocolate");
         akaraCafe.showMenu();
+
+        Map<String, String> recentlyVisitedPlaces = new HashMap<String, String>();
+        recentlyVisitedPlaces.put("Monday", "School");
+        recentlyVisitedPlaces.put("Tuesday", "MagicLand");
+        recentlyVisitedPlaces.put("Wednesday", "Turkish Village");
+        recentlyVisitedPlaces.put("Thursday", "Veritas");
+        recentlyVisitedPlaces.put("Friday", "Baze University");
+
+        for(String day : recentlyVisitedPlaces.keySet()){
+            System.out.println("I visited " + recentlyVisitedPlaces.get(day) + " on " + day);
+        }
+
+        System.out.println(school.name.substring(10, 14));
     }
 }

@@ -2,5 +2,5 @@ Arrays are declared
 
 type[] name = { value, value};
 length of an array is a property
-e.g. String[] people = {"Tim", "Tom", "Tam"}
+e.g. String[] people = new String[] {"Tim", "Tom", "Tam"}
 people.length

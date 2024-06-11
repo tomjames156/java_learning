@@ -2,6 +2,9 @@ import shapes.*;
 import abstraction.*;
 
 public class App {
+    public static boolean assertEquals(char a, char b){
+        return a == b;
+    }
     public static void main(String[] args){
 
         // Person mumsie = new Person();
@@ -27,6 +30,10 @@ public class App {
         // pointB.show();
 
         Figure figRef;
+        String myName = "Tomisin";
+        String myNickName = "Tomi";
+        System.out.println("Is my name equal to my nick name? : " + myName.equals(myNickName));
+        System.out.println(App.assertEquals(myName.charAt(0), 'o'));
 
         // abstract class used as interface
         Figure box = new Rectangle(3, 4);

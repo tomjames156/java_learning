@@ -1,3 +1,5 @@
+package tourify;
+
 import models.*;
 
 public class Main{

@@ -3,7 +3,7 @@ package code_review;
 import java.util.*;
 
 public class Date {
-    public static int myBdayYear = 2005;
+    public static int myBdayYear = 2004;
 
     public static int LONG_WORD_LENGTH = 5;
     public static String longestWord;
@@ -144,11 +144,24 @@ public class Date {
         return dayOfTheYear;
     }
 
+
+    public static int dayOfTheYearRecursive(final int month, final int dayOfMonth, final int year){
+        final int[] MONTH_LENGTHS = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // number of days in every month of the year
+
+        if(month >= 1){
+            return MONTH_LENGTHS[month - 1] += dayOfTheYearRecursive(month - 1, 0, year);
+        }else{
+            return dayOfMonth;
+        }
+    }
+
     public static void main(String[] args){
         
         System.out.println("Today is the Day " + Date.smellyDayOfYear(5, 3, 2025) + " of 2025.");
 
         System.out.println("Today is the Day " + Date.dayOfTheYear(2, 28, 2025) + " of 2025.");
+
+        System.out.println("Today is the Day " + Date.dayOfTheYearRecursive(1, 28, 2025) + " recurse of 2025.");
 
         Scanner yearScanner = new Scanner(System.in);
         System.out.println("Enter a year to check if it's a leap year");
@@ -157,7 +170,7 @@ public class Date {
         yearScanner.close();
 
         if(Date.isLeapYear(myBdayYear)){
-            System.out.println("The year " + testYear + " is a leap year");
+            System.out.println("The year " + testYear + " is a leap year " + smellyLeap(2050));
         }else{
             System.out.println("The year " + myBdayYear + " is not a leap year"); // returns an answer with the year off by one year
         }
